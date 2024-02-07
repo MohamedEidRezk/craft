@@ -31,11 +31,11 @@ class _OnBoardingState extends State<OnBoarding> {
             Center(
               child: PageView(controller: _controller,
 
-                children: [
-                  const IntroPage1(),
-                  const IntroPage2(),
-                  const IntroPage3(),
-                  const IntroPage4(),
+                children: const [
+                  IntroPage1(),
+                  IntroPage2(),
+                  IntroPage3(),
+                  IntroPage4(),
                 ],
               ),
             ),

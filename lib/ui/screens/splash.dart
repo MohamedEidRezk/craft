@@ -34,52 +34,55 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Colors.lightGreen, Colors.greenAccent],
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.lightGreen, Colors.greenAccent],
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+          ),
         ),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            'assets/images/img_logo.png',
-            width: 150,
-            height: 300,
-          ),
-           Text(
-            "Handicrafts",
-            style: GoogleFonts.oswald(
-              textStyle: Theme.of(context).textTheme.displayLarge,
-              fontSize: 30,
-              color: lightColorScheme.onTertiary,
-              fontWeight: FontWeight.bold,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/img_logo.png',
+              width: 150,
+              height: 300,
             ),
+             const Text(
+              "Handicrafts",
+              style: TextStyle(
+                fontSize: 22 ,
+                fontWeight: FontWeight.w700,
+                color: Color(0xffFFFFFF),
 
-          ),
-           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const SizedBox(
-                width: 150,
-              ),
-              Text(
-                "Community",
-                style:
-                GoogleFonts.lora(
-                  color: lightColorScheme.onTertiary,
-                  textStyle: Theme.of(context).textTheme.displayLarge,
-                  fontSize: 30,
-                  fontWeight: FontWeight.w500
+              )
+
+            ),
+             const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SizedBox(
+                  width: 150,
                 ),
-              ),
-            ],
-          )
-        ],
+                Text(
+                  "Community",
+                  style:
+                  TextStyle(
+                    
+                     fontFamily: 'Pristina',
+                    fontWeight: FontWeight.w400,
+                    fontSize: 21,
+                    color: Color(0xffFFFFFF)
+                  )
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

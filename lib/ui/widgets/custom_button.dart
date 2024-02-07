@@ -14,9 +14,9 @@ class CustomButtonOutlined extends StatelessWidget {
 
     return  Container(
       height: 56,
-      width: double.infinity,
+      width: 327,
       decoration: BoxDecoration(
-          color: lightColorScheme.background,
+          color: const Color(0xffE5E7EB),
           borderRadius: BorderRadius.circular(24),
           boxShadow: [
             BoxShadow(
@@ -34,7 +34,7 @@ class CustomButtonOutlined extends StatelessWidget {
           leftIcon ??  const SizedBox.shrink(),
       Text(
         label! ,
-        style: TextStyle(fontSize: 20 , color: lightColorScheme.shadow)),
+        style: const TextStyle(fontSize: 16 ,fontWeight: FontWeight.w600, color: Color(0xff101623))),
           rightIcon ?? const SizedBox.shrink(),
         ],
       ),

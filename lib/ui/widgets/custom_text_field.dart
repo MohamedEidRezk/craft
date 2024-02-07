@@ -85,7 +85,8 @@ class CustomTextFormField extends StatelessWidget {
   }
 
   Widget textFormFieldWidget(BuildContext context) => SizedBox(
-    width: width ?? double.maxFinite,
+    width: width ?? 327,
+    height: 56,
     child: TextFormField(
       scrollPadding:
       EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
@@ -98,11 +99,12 @@ class CustomTextFormField extends StatelessWidget {
       maxLines: maxLines ?? 1,
       decoration: decoration,
       validator: validator,
+
     ),
   );
   InputDecoration get decoration => InputDecoration(
     hintText: hintText ?? "",
-    hintStyle: hintStyle ,
+    hintStyle: hintStyle?? const TextStyle(fontSize: 16 , fontWeight: FontWeight.w500 , color: Color(0xff101623)) ,
     prefixIcon: prefix,
     prefixIconConstraints: prefixConstraints,
     suffixIcon: suffix,
@@ -114,13 +116,13 @@ class CustomTextFormField extends StatelessWidget {
           right: 16,
           bottom: 16,
         ),
-    fillColor: fillColor ?? lightColorScheme.onTertiary,
+    fillColor: fillColor ?? const Color(0xffE5E7EB),
     filled: filled,
     border: borderDecoration ??
         OutlineInputBorder(
           borderRadius: BorderRadius.circular(24),
-          borderSide: BorderSide(
-            color: lightColorScheme.onErrorContainer,
+          borderSide: const BorderSide(
+            color: Color(0xffE5E7EB),
             width: 1,
           ),
         ),
@@ -128,15 +130,15 @@ class CustomTextFormField extends StatelessWidget {
         OutlineInputBorder(
           borderRadius: BorderRadius.circular(24),
           borderSide: BorderSide(
-            color: lightColorScheme.onErrorContainer,
+            color: Color(0xffE5E7EB),
             width: 1,
           ),
         ),
     focusedBorder: borderDecoration ??
         OutlineInputBorder(
           borderRadius: BorderRadius.circular(24),
-          borderSide: BorderSide(
-            color: lightColorScheme.onErrorContainer,
+          borderSide: const BorderSide(
+            color: Color(0xffE5E7EB),
             width: 1,
           ),
         ),

@@ -23,7 +23,7 @@ class _VerifiyCodeState extends State<VerifiyCode> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             children: [
               Row(
@@ -35,8 +35,8 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                       },
                       child: Icon(
                         Icons.arrow_back_ios_new,
-                        color: lightColorScheme.shadow,
-                        size: 25,
+                        color: Color(0xff000000),
+                        size: 16,
                       )),
                 ],
               ),
@@ -49,9 +49,9 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                   Text(
                     "Enter Verification Code ",
                     style: TextStyle(
-                        fontSize: 25,
+                        fontSize: 24,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black),
+                        color: Color(0xff101623)),
                   ),
                   SizedBox(
                     height: 8,
@@ -103,64 +103,63 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                 height: 56,
                 onPressed: () => showDialog(
                   context: context,
-                  builder: (BuildContext context) => Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      AlertDialog(
-                        title: Container(
-                            width: 60,
-                            height: 60,
-                            decoration: BoxDecoration(
-                                color: lightColorScheme.tertiaryContainer,
-                                shape: BoxShape.circle),
-                            child: Image.asset(
-                                "assets/images/img_icoutlinecheck.png")),
-                        content: Column(
-                          children: [
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "Success",
-                              style: TextStyle(
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold,
-                                  color: lightColorScheme.shadow),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              "your Account has been",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: lightColorScheme.onSurfaceVariant,
+                  builder: (BuildContext context) => Container(
+                    width:401 ,
+                    height:327 ,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        AlertDialog(
+                          title: Container(
+                              width: 60,
+                              height: 60,
+                              decoration: BoxDecoration(
+                                  color: Color(0xffFAF8ED),
+                                  shape: BoxShape.circle),
+                              child: Image.asset(
+                                  "assets/images/img_icoutlinecheck.png")),
+                          content: Column(
+                            children: [
+                              const SizedBox(
+                                height: 10,
                               ),
-                            ),
-                            Text(
-                              "Successfully registered",
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: lightColorScheme.onSurfaceVariant,
+                              Text(
+                                "Success",
+                                style: TextStyle(
+                                    fontSize: 20 , fontWeight: FontWeight.w700 ,
+                                    color:Color(0xff101623) ),),
+                              const SizedBox(
+                                height: 10,
                               ),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            CustomButton(
-                              text: ("Go to home"),
-                              onPressed: () {},
-                              width: 180,
-                              height: 40,
-                              backgroundColor: lightColorScheme.primary,
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                          ],
+                              Text(
+                                "your Account has been",
+                                style: TextStyle(
+                                  fontSize: 16 , color: Color(0xffA1A8B0),
+                                  fontWeight: FontWeight.w400,
+
+                                ),
+                              ),
+                              Text(
+                                "Successfully registered",
+                                style: TextStyle(
+                                  fontSize: 16 , color: Color(0xffA1A8B0),
+                                  fontWeight: FontWeight.w400,
+
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              CustomButton(text: ("Go to home"), onPressed: (){} , width: 183 , height:56 ,),
+
+                              const SizedBox(
+                                height: 10,
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),

@@ -33,19 +33,15 @@ bool isChecked=false;
                   onTap: () {
                     context.pushReplacement("/login");
                   },
-                  child: Icon(
-                    Icons.arrow_back_ios_new,
-                    color: lightColorScheme.shadow,
-                    size: 25,
-                  ),
+                  child: const Icon(Icons.arrow_back_ios_new , color: Color(0xff000000),size: 16,),
+
                 ),
                 const SizeHorizontal(value: 20),
-                Text(
+                const Text(
                   'SignUp',
                   style: TextStyle(
-                      fontSize: 20,
-                      color: lightColorScheme.shadow,
-                      fontWeight: FontWeight.bold),
+                      fontSize: 16,
+                      color:Color(0xff101623),fontWeight: FontWeight.w600),
                 )
               ],
             ),
@@ -73,37 +69,54 @@ bool isChecked=false;
             ),
             const SizeVertical(value: 1.5),
             SizedBox(
-              height: 70, // Set the desired height here
-              child: IntlPhoneField(
-                initialCountryCode: "EG",
-                cursorColor: Colors.blueGrey,
-                keyboardType: TextInputType.phone,
-                decoration: InputDecoration(
-                  hintText: "Enter your number",
-                  border: OutlineInputBorder(
+              height: 70,
+              // Set the desired height here
+              child: Container(
+                height: 56,
+                width: 327,
+                  decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24),
-                    borderSide: BorderSide(
-                      color: lightColorScheme.onErrorContainer,
-                      width: 1,
-                    ),
+                    color: Color(0xffE5E7EB),
+
                   ),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(24),
-                    borderSide: BorderSide(
-                      color: lightColorScheme.onErrorContainer,
-                      width: 1,
+
+
+                child: IntlPhoneField(
+
+                  initialCountryCode: "EG",
+                  cursorColor: const Color(0xffA1A8B0),
+                  keyboardType: TextInputType.phone,
+                  decoration: InputDecoration(
+                    fillColor:  const Color(0xffE5E7EB),
+
+                    hintText: "Enter your number",
+                    hintStyle: const TextStyle(fontSize: 16 , fontWeight: FontWeight.w500 , color: Color(0xff101623)) ,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(24),
+                      borderSide: const BorderSide(
+                        color: Color(0xffE5E7EB),
+                        width: 1,
+                      ),
                     ),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(24),
-                    borderSide: BorderSide(
-                      color: lightColorScheme.onErrorContainer,
-                      width: 1,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(24),
+                      borderSide: const BorderSide(
+                        color: Color(0xffE5E7EB),
+                        width: 1,
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(24),
+                      borderSide: BorderSide(
+                        color: Color(0xffE5E7EB),
+                        width: 1,
+                      ),
                     ),
                   ),
                 ),
               ),
             ),
+            const SizeVertical(value: 1.5),
 
             CustomTextFormField(
               prefix: const Icon(
@@ -127,9 +140,9 @@ bool isChecked=false;
 setState(() {
   isChecked=value;
 });
-                },borderColor: Color(0xFFD3D6DA)),
-                 SizedBox(width: 7),
-                 Column(
+                },borderColor: const Color(0xFFD3D6DA)),
+                 const SizedBox(width: 7),
+                 const Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(
