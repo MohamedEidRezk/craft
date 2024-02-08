@@ -8,7 +8,7 @@ import '../../utils/responsive/responsive.dart';
 import '../widgets/custom_text_field.dart';
 
 class SignUpCrafter extends StatefulWidget {
-  SignUpCrafter({super.key});
+  const SignUpCrafter({super.key});
 
   @override
   State<SignUpCrafter> createState() => _SignUpCrafterState();
