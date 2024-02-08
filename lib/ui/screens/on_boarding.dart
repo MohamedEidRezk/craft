@@ -2,6 +2,7 @@ import 'package:craft/ui/screens/intro_screens/intro_page_1.dart';
 import 'package:craft/ui/screens/intro_screens/intro_page_2.dart';
 import 'package:craft/ui/screens/intro_screens/intro_page_3.dart';
 import 'package:craft/ui/screens/intro_screens/intro_page_4.dart';
+import 'package:craft/ui/screens/intro_screens/intro_page_5.dart';
 import 'package:craft/ui/widgets/custom_text_field.dart';
 import 'package:craft/utils/responsive/responsive.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,7 @@ class _OnBoardingState extends State<OnBoarding> {
                   IntroPage2(),
                   IntroPage3(),
                   IntroPage4(),
+                  IntroPage5(),
                 ],
               ),
             ),
@@ -51,7 +53,7 @@ class _OnBoardingState extends State<OnBoarding> {
             ),
             Container(
                 alignment: const Alignment(0,0.6),
-                child: SmoothPageIndicator(controller: _controller, count: 4,
+                child: SmoothPageIndicator(controller: _controller, count: 5,
                 effect: const JumpingDotEffect(dotHeight: 4,dotWidth: 12.63,
                   radius: 56,
 

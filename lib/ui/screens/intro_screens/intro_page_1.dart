@@ -19,8 +19,8 @@ class _IntroPage1State extends State<IntroPage1> {
 
             SvgPicture.asset(
               "assets/images/onBoarding_P1.svg",
-              width: 306,
-              height: 369,
+              width: 245,
+              height: 360,
             ),
             const SizedBox(height: 45),
             const Center(

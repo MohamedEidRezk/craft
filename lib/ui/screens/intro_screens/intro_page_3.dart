@@ -19,8 +19,8 @@ class _IntroPage3State extends State<IntroPage3> {
             // SizedBox(height: 10,),
             SvgPicture.asset(
               "assets/images/onBoarding_P3.svg",
-              width: 306,
-              height: 369,
+              width: 245,
+              height: 360,
             ),
             const SizedBox(height: 45),
             const Center(

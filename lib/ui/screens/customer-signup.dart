@@ -8,14 +8,14 @@ import '../../utils/material-theme/color_schemes.g.dart';
 import '../../utils/responsive/responsive.dart';
 import '../widgets/custom_text_field.dart';
 
-class SignUp extends StatefulWidget {
-   SignUp({super.key});
+class SignUpCustomer extends StatefulWidget {
+   SignUpCustomer({super.key});
 
   @override
-  State<SignUp> createState() => _SignUpState();
+  State<SignUpCustomer> createState() => _SignUpCustomerState();
 }
 
-class _SignUpState extends State<SignUp> {
+class _SignUpCustomerState extends State<SignUpCustomer> {
 bool isChecked=false;
 
   @override
@@ -49,8 +49,7 @@ bool isChecked=false;
             CustomTextFormField(
               prefix: const Icon(
                 Icons.person,
-                color: Colors.blueGrey,
-              ),
+                color:Color(0xffA1A8B0),              ),
               controller: TextEditingController(),
               hintText: '  Enter your name ',
               obscureText: false,
@@ -60,8 +59,7 @@ bool isChecked=false;
             CustomTextFormField(
               prefix: const Icon(
                 Icons.email,
-                color: Colors.blueGrey,
-              ),
+                color:Color(0xffA1A8B0),              ),
               controller: TextEditingController(),
               hintText: '  Enter your email ',
               obscureText: false,
@@ -121,12 +119,10 @@ bool isChecked=false;
             CustomTextFormField(
               prefix: const Icon(
                 Icons.lock,
-                color: Colors.blueGrey,
-              ),
+                color:Color(0xffA1A8B0),              ),
               suffix: const Icon(
                 Icons.visibility,
-                color: Colors.blueGrey,
-              ),
+                color:Color(0xffA1A8B0),              ),
               controller: TextEditingController(),
               hintText: '  Enter Your Password ',
               obscureText: true,
