@@ -63,17 +63,17 @@ class _IntroPage6State extends State<IntroPage6> {
                       onChanged: (value) {
                         setState(() {
                           customer = value;
-                          context.pushReplacement('/introPage6');
+                          context.pushReplacement('/introPage7');
                         });
                       },
                     ),
-                    SizedBox(width: 10),
-                    Text("Customer",
+                    const SizedBox(width: 10),
+                    const Text("Customer",
                         style:
                             TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
                   ],
                 ),
-                SizedBox(height: 22),
+                const SizedBox(height: 22),
 
 
                 Row(
@@ -83,17 +83,17 @@ class _IntroPage6State extends State<IntroPage6> {
                       onChanged: (value) {
                         setState(() {
                           Crafter = value;
-                          context.pushReplacement('/introPage6');
+                          context.pushReplacement('/introPage7');
                         });
                       },
                     ),
-                    SizedBox(width: 10),
-                    Text("Crafter",
+                    const SizedBox(width: 10),
+                    const Text("Crafter",
                         style:
                         TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
                   ],
                 ),
-                SizedBox(height: 22),
+                const SizedBox(height: 22),
                 Row(
                   children: [
                     CustomCheckbox(
@@ -101,12 +101,12 @@ class _IntroPage6State extends State<IntroPage6> {
                       onChanged: (value) {
                         setState(() {
                           Delivery = value;
-                          context.pushReplacement('/introPage6');
+                          context.pushReplacement('/introPage7');
                         });
                       },
                     ),
-                    SizedBox(width: 10),
-                    Text("Delivery",
+                    const SizedBox(width: 10),
+                    const Text("Delivery",
                         style:
                         TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
                   ],

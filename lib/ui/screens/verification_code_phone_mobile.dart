@@ -33,7 +33,7 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                       onTap: () {
                         context.pushReplacement("/signUp");
                       },
-                      child: Icon(
+                      child: const Icon(
                         Icons.arrow_back_ios_new,
                         color: Color(0xff000000),
                         size: 16,
@@ -113,7 +113,7 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                           title: Container(
                               width: 60,
                               height: 60,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   color: Color(0xffFAF8ED),
                                   shape: BoxShape.circle),
                               child: Image.asset(
@@ -123,7 +123,7 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                               const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "Success",
                                 style: TextStyle(
                                     fontSize: 20 , fontWeight: FontWeight.w700 ,
@@ -131,7 +131,7 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                               const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "your Account has been",
                                 style: TextStyle(
                                   fontSize: 16 , color: Color(0xffA1A8B0),
@@ -139,7 +139,7 @@ class _VerifiyCodeState extends State<VerifiyCode> {
 
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "Successfully registered",
                                 style: TextStyle(
                                   fontSize: 16 , color: Color(0xffA1A8B0),
@@ -150,7 +150,9 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                               const SizedBox(
                                 height: 10,
                               ),
-                              CustomButton(text: ("Go to home"), onPressed: (){} , width: 183 , height:56 ,),
+                              CustomButton(text: ("Go to home"), onPressed: (){
+                                context.pushReplacement("/customerHomePage");
+                              } , width: 183 , height:56 ,),
 
                               const SizedBox(
                                 height: 10,

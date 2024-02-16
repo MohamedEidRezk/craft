@@ -80,6 +80,19 @@ class _SignUpDeliveryState extends State<SignUpDelivery> {
                 ),
 
                 const SizeVertical(value: 1.5),
+                CustomTextFormField(
+
+                  prefix: const Icon(
+                    Icons.add_chart,
+                    color:Color(0xffA1A8B0),),
+
+                  controller: TextEditingController(),
+                  hintText: '  Enter your plate number ',
+                  obscureText: false,
+                  textInputType: TextInputType.text,
+                ),
+                const SizeVertical(value: 1.5),
+
 
                 SizedBox(
                   height: 70,
