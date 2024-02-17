@@ -46,7 +46,7 @@ class _SignUpCrafterState extends State<SignUpCrafter> {
                 ),
                 const SizeVertical(value: 3),
                 CustomTextFormField(
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.person,
                     color:Color(0xffA1A8B0),              ),
                   controller: TextEditingController(),
@@ -56,7 +56,7 @@ class _SignUpCrafterState extends State<SignUpCrafter> {
                 ),
                 const SizeVertical(value: 1.5),
                 CustomTextFormField(
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.email,
                     color:Color(0xffA1A8B0),              ),
                   controller: TextEditingController(),
@@ -69,10 +69,10 @@ class _SignUpCrafterState extends State<SignUpCrafter> {
 
                 CustomTextFormField(
 
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.badge,
                     color:Color(0xffA1A8B0),),
-                  suffix: const Icon(
+                  suffixIcon: const Icon(
                     Icons.arrow_drop_down,
                     color:Color(0xffA1A8B0),),
 
@@ -135,10 +135,10 @@ class _SignUpCrafterState extends State<SignUpCrafter> {
                 const SizeVertical(value: 1.5),
 
                 CustomTextFormField(
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.lock,
                     color:Color(0xffA1A8B0),              ),
-                  suffix: const Icon(
+                  suffixIcon: const Icon(
                     Icons.visibility,
                     color:Color(0xffA1A8B0),              ),
                   controller: TextEditingController(),

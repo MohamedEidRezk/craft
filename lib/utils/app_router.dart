@@ -1,3 +1,8 @@
+import 'package:craft/ui/screens/In_store_and_online_workshops/booking_course.dart';
+import 'package:craft/ui/screens/In_store_and_online_workshops/course_lessons.dart';
+import 'package:craft/ui/screens/In_store_and_online_workshops/courses&workshop.dart';
+import 'package:craft/ui/screens/In_store_and_online_workshops/my_courses.dart';
+import 'package:craft/ui/screens/In_store_and_online_workshops/play_lesson.dart';
 import 'package:craft/ui/screens/candles_customer.dart';
 import 'package:craft/ui/screens/customer-signup.dart';
 import 'package:craft/ui/screens/customer_category.dart';
@@ -36,6 +41,12 @@ GoRouter router(){
     GoRoute(path: '/productDetailsSimple' ,  builder:((context , state)=>const ProductDetailsSimple()) ),
     GoRoute(path: '/customerHomePage' ,  builder:((context , state)=>const CustomerHomePage()) ),
     GoRoute(path: '/productDetailsComplex' ,  builder:((context , state)=>const ProductDetailsComplex()) ),
+    GoRoute(path: '/coursesAndWorkshop' ,  builder:((context , state)=>const CoursesAndWorkshop()) ),
+    GoRoute(path: '/bookingCourse' ,  builder:((context , state)=>const BookingCourse()) ),
+    GoRoute(path: '/courseLessons' ,  builder:((context , state)=>const CourseLessons()) ),
+    GoRoute(path: '/myCourses' ,  builder:((context , state)=>const MyCourses()) ),
+    GoRoute(path: '/courseLessons' ,  builder:((context , state)=>const CourseLessons()) ),
+    GoRoute(path: '/playLesson' ,  builder:((context , state)=>const PlayLesson()) ),
 
   ]);
 }

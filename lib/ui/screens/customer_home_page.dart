@@ -67,15 +67,15 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
                   ],
                 ),
               ),
-              const Padding(
+               const Padding(
                 padding: EdgeInsets.only(left: 20 , right: 24 , bottom: 26),
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: CustomTextFormField(
-                    prefix: Icon(Icons.search , size: 16,color: Color(0xffA1A8B0), ),
+                    prefixIcon: Icon(Icons.search , size: 16,color: Color(0xffA1A8B0), ),
                     hintText: 'Search for crafts, products, courses...',
                     hintStyle: TextStyle(fontSize: 12 , fontWeight: FontWeight.w400 , color: Color(0xffA1A8B0)),
-                    suffix: Icon(Icons.filter_list , size: 16,color: Color(0xffA1A8B0),),
+                    suffixIcon: Icon(Icons.filter_list , size: 16,color: Color(0xffA1A8B0),),
                     fillColor: Color(0xffE5E7EB),
 
                   ),
@@ -101,7 +101,11 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
                               child: CustomContainer(
                                   imgPath: "assets/images/Rectangle1001.jpg", text: "Products")),
                           const SizedBox(width: 20,),
-                          CustomContainer(imgPath: "assets/images/Rectangle 1002.jpg", text: "Courses")
+                          InkWell(
+                              onTap: () {
+                                context.pushReplacement('/coursesAndWorkshop');
+                              },
+                              child: CustomContainer(imgPath: "assets/images/Rectangle 1002.jpg", text: "Courses"))
                         ],
                       ),
                     ),
@@ -109,7 +113,7 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 20 , right: 20 , bottom: 20),
+                padding: const EdgeInsets.only(left: 20 , right: 7, bottom: 20),
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Column(
@@ -396,7 +400,7 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
                 ),
               ),
               Padding(
-          padding: const EdgeInsets.only(left: 20 , right: 24 , bottom: 20) ,
+          padding: const EdgeInsets.only(left: 20 , right: 7 , bottom: 20) ,
           child: Row(
             children: [
               Container(

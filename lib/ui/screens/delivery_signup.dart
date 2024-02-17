@@ -46,7 +46,7 @@ class _SignUpDeliveryState extends State<SignUpDelivery> {
                 ),
                 const SizeVertical(value: 3),
                 CustomTextFormField(
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.person,
                     color:Color(0xffA1A8B0),              ),
                   controller: TextEditingController(),
@@ -56,7 +56,7 @@ class _SignUpDeliveryState extends State<SignUpDelivery> {
                 ),
                 const SizeVertical(value: 1.5),
                 CustomTextFormField(
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.email,
                     color:Color(0xffA1A8B0),              ),
                   controller: TextEditingController(),
@@ -69,7 +69,7 @@ class _SignUpDeliveryState extends State<SignUpDelivery> {
 
                 CustomTextFormField(
 
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.motorcycle,
                     color:Color(0xffA1A8B0),),
 
@@ -82,7 +82,7 @@ class _SignUpDeliveryState extends State<SignUpDelivery> {
                 const SizeVertical(value: 1.5),
                 CustomTextFormField(
 
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.add_chart,
                     color:Color(0xffA1A8B0),),
 
@@ -145,10 +145,10 @@ class _SignUpDeliveryState extends State<SignUpDelivery> {
                 const SizeVertical(value: 1.5),
 
                 CustomTextFormField(
-                  prefix: const Icon(
+                  prefixIcon: const Icon(
                     Icons.lock,
                     color:Color(0xffA1A8B0),              ),
-                  suffix: const Icon(
+                  suffixIcon: const Icon(
                     Icons.visibility,
                     color:Color(0xffA1A8B0),              ),
                   controller: TextEditingController(),

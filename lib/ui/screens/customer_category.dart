@@ -10,7 +10,7 @@ class CustomerCategory extends StatelessWidget {
     return  Scaffold(
       body:SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
               const SizedBox(height: 5,),
@@ -18,7 +18,7 @@ class CustomerCategory extends StatelessWidget {
                 children: [
                   SizedBox(width: 24,),
                   Icon(Icons.arrow_back_ios_new , color: Color(0xff000000),size: 16,),
-                  SizedBox(width: 102.5,),
+                  SizedBox(width: 85,),
                   Text('Category' ,style: TextStyle(
                       fontSize: 18,
                       color:Color(0xff101623),fontWeight: FontWeight.w600),),

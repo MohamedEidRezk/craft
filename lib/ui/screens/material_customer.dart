@@ -16,7 +16,7 @@ class CustomerMaterial extends StatelessWidget {
               const SizedBox(height: 5,),
               const Row(
                 children: [
-                  SizedBox(width: 129,),
+                  SizedBox(width: 100,),
                   Text('Material' ,style: TextStyle(
                       fontSize: 18,
                       color:Color(0xff101623),fontWeight: FontWeight.w600),),
