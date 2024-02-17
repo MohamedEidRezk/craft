@@ -47,7 +47,7 @@ bool isChecked=false;
             ),
             const SizeVertical(value: 3),
             CustomTextFormField(
-              prefix: const Icon(
+              prefixIcon: const Icon(
                 Icons.person,
                 color:Color(0xffA1A8B0),              ),
               controller: TextEditingController(),
@@ -57,7 +57,7 @@ bool isChecked=false;
             ),
             const SizeVertical(value: 1.5),
             CustomTextFormField(
-              prefix: const Icon(
+              prefixIcon: const Icon(
                 Icons.email,
                 color:Color(0xffA1A8B0),              ),
               controller: TextEditingController(),
@@ -117,10 +117,10 @@ bool isChecked=false;
             const SizeVertical(value: 1.5),
 
             CustomTextFormField(
-              prefix: const Icon(
+              prefixIcon: const Icon(
                 Icons.lock,
                 color:Color(0xffA1A8B0),              ),
-              suffix: const Icon(
+              suffixIcon: const Icon(
                 Icons.visibility,
                 color:Color(0xffA1A8B0),              ),
               controller: TextEditingController(),

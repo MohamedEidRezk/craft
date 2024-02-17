@@ -2,10 +2,11 @@ import 'package:craft/utils/material-theme/color_schemes.g.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  const CustomTextFormField({
+   const CustomTextFormField({
     Key? key,
     this.alignment,
     this.width,
+    this.height,
     this.scrollPadding,
     this.controller,
     this.focusNode,
@@ -17,9 +18,9 @@ class CustomTextFormField extends StatelessWidget {
     this.maxLines,
     this.hintText,
     this.hintStyle,
-    this.prefix,
+    this.prefixIcon,
     this.prefixConstraints,
-    this.suffix,
+    this.suffixIcon,
     this.suffixConstraints,
     this.contentPadding,
     this.borderDecoration,
@@ -33,6 +34,7 @@ class CustomTextFormField extends StatelessWidget {
   final Alignment? alignment;
 
   final double? width;
+  final double? height;
 
   final TextEditingController? scrollPadding;
 
@@ -56,11 +58,11 @@ class CustomTextFormField extends StatelessWidget {
 
   final TextStyle? hintStyle;
 
-  final Widget? prefix;
+  final Widget? prefixIcon;
 
   final BoxConstraints? prefixConstraints;
 
-  final Widget? suffix;
+  final Widget? suffixIcon;
 
   final BoxConstraints? suffixConstraints;
 
@@ -105,9 +107,9 @@ class CustomTextFormField extends StatelessWidget {
   InputDecoration get decoration => InputDecoration(
     hintText: hintText ?? "",
     hintStyle: hintStyle?? const TextStyle(fontSize: 16 , fontWeight: FontWeight.w500 , color: Color(0xff101623)) ,
-    prefixIcon: prefix,
+    prefixIcon: prefixIcon,
     prefixIconConstraints: prefixConstraints,
-    suffixIcon: suffix,
+    suffixIcon: suffixIcon,
     suffixIconConstraints: suffixConstraints,
     isDense: true,
     contentPadding: contentPadding ??

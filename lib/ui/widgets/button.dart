@@ -5,6 +5,8 @@ class CustomButton extends StatelessWidget {
     Key? key,
     required this.text,
     this.backgroundColor,
+    this.textColor,
+    this.borderColor,
     required this.onPressed,
     required this.width,
     required this.height,
@@ -12,6 +14,8 @@ class CustomButton extends StatelessWidget {
 
   final String text;
   final Color? backgroundColor;
+  final Color? borderColor;
+  final Color? textColor;
   final Function() onPressed;
   final double width;
   final double height;
@@ -23,7 +27,7 @@ class CustomButton extends StatelessWidget {
       child: Container(
         width: width,
         height: height,
-        decoration: BoxDecoration(
+        decoration: BoxDecoration(border: Border.all(color: borderColor ?? Colors.transparent),
           color: backgroundColor ?? const Color(0xFF7FB04F),
           borderRadius: BorderRadius.circular(24),
           boxShadow: [
@@ -41,9 +45,9 @@ class CustomButton extends StatelessWidget {
           child: Text(
             text,
             textAlign: TextAlign.center,
-            style: const TextStyle(
+            style:  TextStyle(
               fontSize: 16,
-              color: Colors.white,
+              color: textColor ?? Colors.white,
               fontWeight: FontWeight.w600,
             ),
           ),

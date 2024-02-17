@@ -32,15 +32,15 @@ class LoginScreen  extends StatelessWidget {
               ),
             const SizeVertical(value: 2),
             CustomTextFormField(
-                prefix:const Icon(Icons.email , color:Color((0xffA1A8B0)),) ,
+              prefixIcon:const Icon(Icons.email , color:Color((0xffA1A8B0)),) ,
                 controller: TextEditingController(), hintText: '  Enter Your Email ' , obscureText: false,
               textInputType: TextInputType.emailAddress,
             ),
           const SizeVertical(value: 1),
 
           CustomTextFormField(
-                  prefix:const Icon(Icons.lock , color:Color(0xffA1A8B0),) ,
-                  suffix: const Icon(Icons.visibility , color:Color(0xffA1A8B0),) ,
+            prefixIcon:const Icon(Icons.lock , color:Color(0xffA1A8B0),) ,
+            suffixIcon: const Icon(Icons.visibility , color:Color(0xffA1A8B0),) ,
                   controller: TextEditingController(), hintText: '  Enter Your Password ', obscureText: true,
             textInputAction: TextInputAction.done,
             textInputType: TextInputType.visiblePassword,
