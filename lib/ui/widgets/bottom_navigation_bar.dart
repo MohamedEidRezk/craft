@@ -27,6 +27,10 @@ class AnimatedBottomNavigationBar extends StatelessWidget {
           label: 'Courses',
         ),
         BottomNavigationBarItem(
+          icon: Icon(Icons.email),
+          label: '',
+        ),
+        BottomNavigationBarItem(
           icon: Icon(Icons.person),
           label: 'Profile',
         ),

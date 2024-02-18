@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_verification_code/flutter_verification_code.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../utils/material-theme/color_schemes.g.dart';
+import '../../../utils/material-theme/color_schemes.g.dart';
 
 class VerifiyCode extends StatefulWidget {
   const VerifiyCode({super.key});

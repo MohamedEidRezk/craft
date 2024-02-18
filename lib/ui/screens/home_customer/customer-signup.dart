@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
-import '../../utils/material-theme/color_schemes.g.dart';
-import '../../utils/responsive/responsive.dart';
-import '../widgets/custom_text_field.dart';
+import '../../../utils/material-theme/color_schemes.g.dart';
+import '../../../utils/responsive/responsive.dart';
+import '../../widgets/custom_text_field.dart';
 
 class SignUpCustomer extends StatefulWidget {
    SignUpCustomer({super.key});

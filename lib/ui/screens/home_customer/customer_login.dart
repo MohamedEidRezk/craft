@@ -98,7 +98,7 @@ class LoginScreen  extends StatelessWidget {
                             const SizedBox(height: 10,),
 
                             CustomButton(text: ("Go to home"), onPressed: (){
-                              context.pushReplacement("/customerHomePage");
+                              context.pushReplacement("/landing");
                             } , width: 183 , height:56 ,),
                             const SizedBox(height: 10,),
 

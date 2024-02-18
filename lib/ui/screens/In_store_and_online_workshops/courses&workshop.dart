@@ -46,7 +46,7 @@ class _CoursesAndWorkshopState extends State<CoursesAndWorkshop> {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-             Padding(
+             const Padding(
               padding: EdgeInsets.only(left: 5, right: 6, top: 31, bottom: 7),
               child: CustomTextFormField(
                 width: 324,
@@ -60,7 +60,7 @@ class _CoursesAndWorkshopState extends State<CoursesAndWorkshop> {
               ),
             ),
             Expanded(
-                child: ListView.separated(separatorBuilder: (context, index) => SizedBox(height: 16,),
+                child: ListView.separated(separatorBuilder: (context, index) => const SizedBox(height: 16,),
               itemBuilder: (context, index) => InkWell(
                   onTap: () {
                     context.pushReplacement('/bookingCourse');

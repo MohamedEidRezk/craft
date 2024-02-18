@@ -3,20 +3,21 @@ import 'package:craft/ui/screens/In_store_and_online_workshops/course_lessons.da
 import 'package:craft/ui/screens/In_store_and_online_workshops/courses&workshop.dart';
 import 'package:craft/ui/screens/In_store_and_online_workshops/my_courses.dart';
 import 'package:craft/ui/screens/In_store_and_online_workshops/play_lesson.dart';
-import 'package:craft/ui/screens/candles_customer.dart';
-import 'package:craft/ui/screens/customer-signup.dart';
-import 'package:craft/ui/screens/customer_category.dart';
-import 'package:craft/ui/screens/customer_home_page.dart';
+import 'package:craft/ui/screens/home_customer/candles_customer.dart';
+import 'package:craft/ui/screens/home_customer/customer-signup.dart';
+import 'package:craft/ui/screens/home_customer/customer_category.dart';
+import 'package:craft/ui/screens/home_customer/customer_home_page.dart';
 import 'package:craft/ui/screens/delivery_signup.dart';
 import 'package:craft/ui/screens/intro_screens/intro_page_5.dart';
 import 'package:craft/ui/screens/intro_screens/intro_page_6.dart';
-import 'package:craft/ui/screens/login.dart';
-import 'package:craft/ui/screens/material_customer.dart';
+import 'package:craft/ui/screens/home_customer/customer_login.dart';
+import 'package:craft/ui/screens/home_customer/material_customer.dart';
+import 'package:craft/ui/screens/landing.dart';
 import 'package:craft/ui/screens/on_boarding.dart';
-import 'package:craft/ui/screens/product_details.dart';
-import 'package:craft/ui/screens/product_details_complex.dart';
+import 'package:craft/ui/screens/home_customer/product_details.dart';
+import 'package:craft/ui/screens/home_customer/product_details_complex.dart';
 import 'package:craft/ui/screens/splash.dart';
-import 'package:craft/ui/screens/verification_code_phone_mobile.dart';
+import 'package:craft/ui/screens/home_customer/verification_code_phone_mobile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 
@@ -47,6 +48,7 @@ GoRouter router(){
     GoRoute(path: '/myCourses' ,  builder:((context , state)=>const MyCourses()) ),
     GoRoute(path: '/courseLessons' ,  builder:((context , state)=>const CourseLessons()) ),
     GoRoute(path: '/playLesson' ,  builder:((context , state)=>const PlayLesson()) ),
+    GoRoute(path: '/landing' ,  builder:((context , state)=> Landing()) ),
 
   ]);
 }

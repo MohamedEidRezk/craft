@@ -1,3 +1,7 @@
+import 'package:craft/ui/screens/In_store_and_online_workshops/courses&workshop.dart';
+import 'package:craft/ui/screens/customer_profile/profile.dart';
+import 'package:craft/ui/screens/home_customer/customer_category.dart';
+import 'package:craft/ui/screens/landing.dart';
 import 'package:craft/ui/widgets/bottom_navigation_bar.dart';
 import 'package:craft/ui/widgets/button.dart';
 import 'package:craft/ui/widgets/custom_child_scroll_for-you.dart';
@@ -7,7 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:go_router/go_router.dart';
 
-import '../widgets/custom_child_scroll_trending.dart';
+import '../../widgets/custom_child_scroll_trending.dart';
 class CustomerHomePage extends StatefulWidget {
 
   const CustomerHomePage({super.key});
@@ -17,18 +21,11 @@ class CustomerHomePage extends StatefulWidget {
 }
 
 class _CustomerHomePageState extends State<CustomerHomePage> {
-  int _selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return    Scaffold(
-      bottomNavigationBar: AnimatedBottomNavigationBar(
-        currentIndex: _selectedIndex,
-        onTap: (index) {
-          setState(() {
-            _selectedIndex = index;
-          });
-        },
-      ),
+
       body:  SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Align(
