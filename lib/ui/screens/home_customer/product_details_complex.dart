@@ -3,6 +3,7 @@ import 'package:craft/ui/widgets/input_quity.dart';
 import 'package:craft/ui/widgets/product_details_detailsalary_section.dart';
 import 'package:craft/ui/widgets/select_size.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ProductDetailsComplex extends StatelessWidget {
   const ProductDetailsComplex({super.key});
@@ -17,20 +18,22 @@ class ProductDetailsComplex extends StatelessWidget {
 
           children: [
             const Image(image: AssetImage("assets/images/Product.png"), width: 375 , height: 413,),
-            const Positioned(
+             Positioned(
               top: 25,
               child:Row(
                 children: [
-                  SizedBox(width: 24,),
-                  Icon(Icons.arrow_back_ios_new , color: Color(0xff101623),size: 16,),
-                  SizedBox(width: 80,),
-                  Text('Product Details' ,style: TextStyle(
+                  const SizedBox(width: 24,),
+                  IconButton(onPressed: (){
+                    context.pushReplacement("/candleCategory");
+                  }, icon: const Icon(Icons.arrow_back_ios , color: Color(0xff101623))),
+                  const SizedBox(width: 80,),
+                  const Text('Product Details' ,style: TextStyle(
                       fontSize: 18,
                       color:Color(0xff101623),fontWeight: FontWeight.w600),),
-                  SizedBox(width: 50,),
-                  Icon(Icons.favorite_border , color: Color(0xff101623), size: 24,),
-                  SizedBox(width: 15,),
-                  Icon(Icons.shopping_bag_outlined , color: Color(0xff101623), size: 24,),
+                  const SizedBox(width: 50,),
+                  const Icon(Icons.favorite_border , color: Color(0xff101623), size: 24,),
+                  const SizedBox(width: 15,),
+                  const Icon(Icons.shopping_bag_outlined , color: Color(0xff101623), size: 24,),
 
                 ],
               ), ),
@@ -73,22 +76,22 @@ class ProductDetailsComplex extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(height: 5,),
+                        const SizedBox(height: 5,),
                         Row(
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text('Select Color' ,style: TextStyle(
+                                const Text('Select Color' ,style: TextStyle(
                                     fontSize: 18,
                                     color:Color(0xff101623),fontWeight: FontWeight.w500),),
-                                SizedBox(height: 3,),
+                                const SizedBox(height: 3,),
                                 Image.asset("assets/images/Component Colors.png" , width: 196 , height: 26,),
                               ],
                             ),
                           ],
                         ),
-                        SizedBox(height: 4,),
+                        const SizedBox(height: 4,),
 
                         const Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,

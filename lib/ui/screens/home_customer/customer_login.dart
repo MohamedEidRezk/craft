@@ -13,25 +13,31 @@ class LoginScreen  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      appBar:  AppBar(
+    leading: IconButton(
+    icon: const Icon(Icons.arrow_back_ios, color: Colors.black, ), onPressed: () {
+    context.pushReplacement("/signUp");
+    },
+    ),
+    backgroundColor: Colors.white,
+    title: const Text(
+    "Login",
+    style: TextStyle(
+    color: Colors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    ),
+    ),
+    centerTitle: true,
+    elevation: 0,
+    ),
 
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
             children: [
-              const Row(
-                children: [
-                  Icon(Icons.arrow_back_ios_new , color: Color(0xff000000),size: 16,),
-                  SizeHorizontal(value: 20),
-                  Center(
-                    child: Text('Login' ,style: TextStyle(
-                        fontSize: 16,
-                        color:Color(0xff101623),fontWeight: FontWeight.w600),),
-                  )
-                ],
-              ),
-            const SizeVertical(value: 2),
-            CustomTextFormField(
+              CustomTextFormField(
               prefixIcon:const Icon(Icons.email , color:Color((0xffA1A8B0)),) ,
                 controller: TextEditingController(), hintText: '  Enter Your Email ' , obscureText: false,
               textInputType: TextInputType.emailAddress,

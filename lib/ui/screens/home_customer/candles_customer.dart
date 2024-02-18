@@ -8,33 +8,52 @@ class CandlesCustomer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      appBar: AppBar(
+          backgroundColor: Colors.white,
+          title: const Text(
+            "Candles",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          centerTitle: true,
+          elevation: 0,
+          leading:IconButton(
+              onPressed: () {
+                context.pushReplacement("/customerCategory");
+              },
+              icon: const Icon(
+                Icons.arrow_back_ios,
+                color: Colors.black,
+              )),
+          actions: [
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.favorite_outline_sharp,
+                  color: Colors.black,
+                )),
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.shopping_bag_outlined,
+                  color: Colors.black,
+                )),
+          ]),
+
       body:SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              const SizedBox(height: 5,),
-              const Row(
-                children: [
-                  SizedBox(width: 24,),
-                  Icon(Icons.arrow_back_ios_new , color: Color(0xff000000),size: 16,),
-                  SizedBox(width: 85,),
-                  Text('Candles' ,style: TextStyle(
-                      fontSize: 18,
-                      color:Color(0xff101623),fontWeight: FontWeight.w600),),
-                  SizedBox(width: 62,),
-                  Icon(Icons.favorite_border , color: Color(0xff000000), size: 24,),
-                  SizedBox(width: 15,),
-                  Icon(Icons.shopping_bag_outlined , color: Color(0xff000000), size: 24,),
-
-                ],
-              ),
               Row(
                 children: [
                   Column(
 
                     children: [
-                      const SizedBox(height: 40,),
+                      const SizedBox(height: 10,),
                       const SizedBox(
                         child: Column(children: [
                           Text("All products are ",

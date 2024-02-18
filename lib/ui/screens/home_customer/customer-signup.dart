@@ -22,29 +22,29 @@ bool isChecked=false;
   Widget build(BuildContext context) {
     bool value = false;
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios , color: Colors.black,), onPressed: () {
+            context.pushReplacement("/login");
+        },
+        ),
+          backgroundColor: Colors.white,
+          title: const Text(
+            "SignUp",
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          centerTitle: true,
+          elevation: 0,
+         ),
         body: SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(15),
         child: Column(
           children: [
-            Row(
-              children: [
-                InkWell(
-                  onTap: () {
-                    context.pushReplacement("/login");
-                  },
-                  child: const Icon(Icons.arrow_back_ios_new , color: Color(0xff000000),size: 16,),
-
-                ),
-                const SizeHorizontal(value: 20),
-                const Text(
-                  'SignUp',
-                  style: TextStyle(
-                      fontSize: 16,
-                      color:Color(0xff101623),fontWeight: FontWeight.w600),
-                )
-              ],
-            ),
             const SizeVertical(value: 3),
             CustomTextFormField(
               prefixIcon: const Icon(
@@ -74,7 +74,7 @@ bool isChecked=false;
                 width: 327,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24),
-                    color: Color(0xffE5E7EB),
+                    color: const Color(0xffE5E7EB),
 
                   ),
 
@@ -105,7 +105,7 @@ bool isChecked=false;
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(24),
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Color(0xffE5E7EB),
                         width: 1,
                       ),

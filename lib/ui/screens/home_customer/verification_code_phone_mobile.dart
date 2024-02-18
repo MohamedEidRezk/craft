@@ -21,25 +21,22 @@ class _VerifiyCodeState extends State<VerifiyCode> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios , color: Colors.black,),
+          onPressed: () {
+            context.pushReplacement("/SignUp");
+          },
+        ),
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        elevation: 0,
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  InkWell(
-                      onTap: () {
-                        context.pushReplacement("/signUp");
-                      },
-                      child: const Icon(
-                        Icons.arrow_back_ios_new,
-                        color: Color(0xff000000),
-                        size: 16,
-                      )),
-                ],
-              ),
               const SizedBox(
                 height: 15,
               ),
@@ -104,8 +101,8 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                 onPressed: () => showDialog(
                   context: context,
                   builder: (BuildContext context) => Container(
-                    width:401 ,
-                    height:327 ,
+                    width: 401,
+                    height: 327,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -126,34 +123,40 @@ class _VerifiyCodeState extends State<VerifiyCode> {
                               const Text(
                                 "Success",
                                 style: TextStyle(
-                                    fontSize: 20 , fontWeight: FontWeight.w700 ,
-                                    color:Color(0xff101623) ),),
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w700,
+                                    color: Color(0xff101623)),
+                              ),
                               const SizedBox(
                                 height: 10,
                               ),
                               const Text(
                                 "your Account has been",
                                 style: TextStyle(
-                                  fontSize: 16 , color: Color(0xffA1A8B0),
+                                  fontSize: 16,
+                                  color: Color(0xffA1A8B0),
                                   fontWeight: FontWeight.w400,
-
                                 ),
                               ),
                               const Text(
                                 "Successfully registered",
                                 style: TextStyle(
-                                  fontSize: 16 , color: Color(0xffA1A8B0),
+                                  fontSize: 16,
+                                  color: Color(0xffA1A8B0),
                                   fontWeight: FontWeight.w400,
-
                                 ),
                               ),
                               const SizedBox(
                                 height: 10,
                               ),
-                              CustomButton(text: ("Go to home"), onPressed: (){
-                                context.pushReplacement("/customerHomePage");
-                              } , width: 183 , height:56 ,),
-
+                              CustomButton(
+                                text: ("Go to home"),
+                                onPressed: () {
+                                  context.pushReplacement("/customerHomePage");
+                                },
+                                width: 183,
+                                height: 56,
+                              ),
                               const SizedBox(
                                 height: 10,
                               ),
