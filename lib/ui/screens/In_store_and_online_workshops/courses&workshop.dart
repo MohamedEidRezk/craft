@@ -56,7 +56,7 @@ class _CoursesAndWorkshopState extends State<CoursesAndWorkshop> {
                 hintText: "Search",
                 hintStyle: TextStyle(color: Color(0xFFA1A8B0)),
                 suffixIcon:
-                    Icon(Icons.filter_3_sharp, color: Color(0xFF7FB04F)),
+                    Icon(Icons.list, color: Color(0xFF7FB04F)),
               ),
             ),
             Expanded(

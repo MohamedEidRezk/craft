@@ -67,10 +67,10 @@ bool isChecked=false;
             ),
             const SizeVertical(value: 1.5),
             SizedBox(
-              height: 70,
+              height: 55,
               // Set the desired height here
               child: Container(
-                height: 56,
+                height: 26,
                 width: 327,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24),
@@ -80,15 +80,17 @@ bool isChecked=false;
 
 
                 child: IntlPhoneField(
-
                   initialCountryCode: "EG",
                   cursorColor: const Color(0xffA1A8B0),
                   keyboardType: TextInputType.phone,
                   decoration: InputDecoration(
-                    fillColor:  const Color(0xffE5E7EB),
-
+                    fillColor: const Color(0xffE5E7EB),
                     hintText: "Enter your number",
-                    hintStyle: const TextStyle(fontSize: 16 , fontWeight: FontWeight.w500 , color: Color(0xff101623)) ,
+                    hintStyle: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xff101623),
+                    ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(24),
                       borderSide: const BorderSide(
@@ -110,8 +112,11 @@ bool isChecked=false;
                         width: 1,
                       ),
                     ),
+                    // Remove the counterText
+                    counterText: "",
                   ),
                 ),
+
               ),
             ),
             const SizeVertical(value: 1.5),
